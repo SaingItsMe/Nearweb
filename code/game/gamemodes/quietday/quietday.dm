@@ -16,7 +16,7 @@
 
 /datum/game_mode/quietday/post_setup()
 	..()
-/*
+
 /datum/game_mode/quietday/can_start()
 	for(var/mob/new_player/player in mob_list)
 		if(player.ready && player.client.work_chosen == "Baron")
@@ -24,7 +24,7 @@
 		else
 			return 0
 	return 0
-*/
+/*
 /datum/game_mode/quietday/can_start()
 	for(var/mob/new_player/player in player_list)
 		for(var/mob/new_player/player2 in player_list)
@@ -32,7 +32,7 @@
 				if(player.ready && player.client.work_chosen == "Baron" && player2.ready && player2.client.work_chosen == "Inquisitor"&& player3.ready && player3.client.work_chosen == "Merchant")
 					return 1
 	return 0
-
+*/
 /datum/game_mode/quietday/declare_completion()
 	..()
 	if(!has_starring)
