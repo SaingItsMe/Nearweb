@@ -19,7 +19,7 @@
 
 /datum/game_mode/quietday/can_start()
 	for(var/mob/new_player/player in mob_list)
-		if(player.ready && player.client.work_chosen == "Baroness")
+		if(player.ready && player.client.work_chosen == "Baron" || player.client.work_chosen == "Pusher" || player.client.work_chosen == "Baroness" || player.client.work_chosen == "Migrant")
 			return 1
 		else
 			return 0
