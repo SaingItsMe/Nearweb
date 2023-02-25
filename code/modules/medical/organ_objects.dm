@@ -307,7 +307,7 @@
 				S.amountcheck()
 			return
 
-	if(istype(W, /obj/item/surgery_tool/scalpel) && connected)
+	if(istype(W, /obj/item/surgery_tool/scalpel) || istype (W, /obj/item/kitchen/utensil/knife ) && connected)
 		if(do_after(user, 20))
 			var/list/roll_result = roll3d6(user, SKILL_SURG, -2, FALSE)
 			switch(roll_result[GP_RESULT])
