@@ -1347,6 +1347,8 @@ var/mob/FortLordHand
 				src.equip_to_slot_or_del(new /obj/item/clothing/glasses/Reyepatch(src.back), slot_glasses)
 			if("Disability (No Left Eye)")
 				src.equip_to_slot_or_del(new /obj/item/clothing/glasses/Leyepatch(src.back), slot_glasses)
+			if("Eunuch")
+				src.mutilated_genitals = TRUE
 
 
 /mob/living/carbon/human/proc/applyProvince()

@@ -787,7 +787,7 @@ var/const/MAX_SAVE_SLOTS = 10
 
 					if("vice")
 						var/list/Vices = VicesList.Copy()
-						Vices.Add("Disability (No Right Eye)", "Disability (No Left Eye)", "Low Pain Tolerance")
+						Vices.Add("Disability (No Right Eye)", "Disability (No Left Eye)", "Low Pain Tolerance", "Eunuch")
 						Vices.Add("Random")
 						if(age < 18)
 							Vices.Remove("Sexoholic")
